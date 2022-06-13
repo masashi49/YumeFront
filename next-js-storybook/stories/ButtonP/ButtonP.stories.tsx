@@ -1,25 +1,25 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { ButtonP } from './ButtonP';
+import { Button } from './ButtonP';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
-  component: ButtonP,
+  title: 'Example/ButtonP/Button',
+  component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof ButtonP>;
+} as ComponentMeta<typeof Button>;
 
 
-export const TemplateP: ComponentStory<typeof ButtonP> = (args) => {
+export const TemplateP: ComponentStory<typeof Button> = (args) => {
   return (
     <div>
-      <ButtonP {...args}>
-        ぼたんですよaaaaaaa
-      </ButtonP>
+      <Button {...args}>
+        ぼたんですよ
+      </Button>
     </div>
   )
 }

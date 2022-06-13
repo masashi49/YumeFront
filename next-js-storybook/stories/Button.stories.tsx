@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Button } from './Button';
-import { ButtonP } from './ButtonP';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,13 +22,3 @@ Primary.args = {
   primary: true,
   label: 'Button',
 };
-
-export const TemplateP: ComponentStory<typeof ButtonP> = (args) => {
-  return (
-    <div>
-      <ButtonP {...args}>
-        ぼたんです
-      </ButtonP>
-    </div>
-  )
-}
