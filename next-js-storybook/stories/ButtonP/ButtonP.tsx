@@ -1,5 +1,4 @@
-import { ReactNode } from 'react';
-import styled from "styled-components";
+import React, { useState, ReactNode } from "react";
 import { ButtonP } from "./ButtonPStyle"
 
 type Props = {
@@ -7,7 +6,8 @@ type Props = {
 }
 
 export const Button = ({ children }: Props) => {
+  const [isRed, setIsRed] = useState(false);
   return (
-    <ButtonP>{children}</ButtonP>
+    <ButtonP onClick={() => setIsRed(!isRed)}>{children}</ButtonP>
   )
 }
